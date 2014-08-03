@@ -15,5 +15,5 @@ How to use
 Distribution
 ============
 
-Please fill free to modify and use (GPLv2).
+Please feel free to modify and use (GPLv2).
 Pull requests are strongly appreciated.
