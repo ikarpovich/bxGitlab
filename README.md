@@ -11,3 +11,9 @@ How to use
 3. Create custom user field named UF_GITLAB_ID in Bitrix24. Fill in an ID for each user.
 4. Choose WebHooks in a project settings in Gitlab, and fill in an URL for commithandler.php
 5. Enjoy :)
+
+Distribution
+============
+
+Please fill free to modify and use (GPLv2).
+Pull requests are strongly appreciated.
