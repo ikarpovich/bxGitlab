@@ -11,6 +11,12 @@ fclose($handlle);
 
 $arData=json_decode($http_raw_post_data, true);
 
+// Clean id from whitespaces. You don't need this.
+$arData['user_id'] = $arData['user_id'] ? preg_replace('/\s+/', '', $arData['user_id']) : null;
+if (!isset($arData["user_id"]) || strlen($arData['user_id']) <= 0) {
+	return;
+}
+
 $rsUser=CUser::GetList(($by="ID"), ($order="DESC"), array("UF_GITLAB_ID"=>$arData["user_id"]));
 $arUser=$rsUser->Fetch();
 if(!$arUser)
